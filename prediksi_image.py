@@ -46,7 +46,7 @@ train_datagen = ImageDataGenerator(rescale=1./255,
 
 # 4. Mengatur generator untuk data pelatihan
 train_generator = train_datagen.flow_from_directory(
-    'E:\\LATIHAN\\deeplearning\\Data\\Cats vs Dogs\\data\\train',  # Ganti dengan path ke direktori data pelatihan Anda
+    'E:\\LATIHAN\\deeplearning',  # Ganti dengan path ke direktori data pelatihan Anda
     target_size=(148, 148),
     batch_size=32,
     class_mode='binary')
@@ -81,5 +81,5 @@ def predict_image(img_path):
     plt.show()
 
 # 7. Contoh penggunaan fungsi prediksi
-img_path = 'E:\\LATIHAN\\deeplearning\\Data\\Cats vs Dogs\\data\\test\\dogs\\dog.1139.jpg'  # Ganti dengan path gambar Anda
+img_path = 'E:\\LATIHAN\\deeplearning\\data\\test\\dogs\\dog.1139.jpg'  # Ganti dengan path gambar Anda
 predict_image(img_path)
